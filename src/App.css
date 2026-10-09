@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f3f3;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f3f3;
+}
+
+.phone {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f3f3;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 58px;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile-content {
+  padding: 18px 22px;
+}
+
+/* Profile picture circle */
+.profile-image {
+  width: 105px;
+  height: 105px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #dddddd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* Image inside the circle */
+.profile-image img {
+  display: block;
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  object-fit: contain;
+}
+
+/* Horizontal line */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  margin-bottom: 12px;
+}
+
+/* Profile information */
+.profile-info h3 {
+  margin: 8px 0 4px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.profile-info p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #222222;
+}
+
+/* + button */
+.add-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #000000;
+  color: #ffffff;
+
+  font-size: 27px;
+  line-height: 45px;
+
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #333333;
+}
